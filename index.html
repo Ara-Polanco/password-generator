@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header__heading">Password Generator</h1>
+    </header>
+
+    <main class="generator container">
+        <form action="" class="generator__form">
+
+            <div class="generator__password">
+                <input class="generator__password-value" type="text" id="generator__password-value" placeholder="P4$5W0RD!" readonly> 
+            </div>
+
+            <div class="generator__length">
+                <label for="" class="generator__length-value">Length: 16</label>
+
+                <div class="generator__range">
+                    <p class="generator__range-value">4</p>
+                    <input type="range" class="generator__range-input" id="range" min="4" max="32" value="16" step="4">
+                    <p class="generator__range-value">32</p>
+                </div>
+            </div>
+
+            <div class="generator__filters">
+
+                <div class="generator__upperCase generator__options">
+                    <label for="" class="generator__description">Include UpperCase</label>
+                    <input type="checkbox" class="generator__checkbox">
+                </div>
+
+                <div class="generator__lowerCase generator__options">
+                    <label for="" class="generator__description">Include LowerCase</label>
+                    <input type="checkbox" class="generator__checkbox">
+                </div>
+
+                <div class="generator__numbers generator__options">
+                    <label for="" class="generator__description">Include Numbers</label>
+                    <input type="checkbox" class="generator__checkbox">
+                </div>
+
+                <div class="generator__symbols generator__options">
+                    <label for="" class="generator__description">Include Symbols</label>
+                    <input type="checkbox" class="generator__checkbox">
+                </div>
+
+                <button disabled>Generate Password</button>
+
+            </div>
+
+
+        </form>
+
+
+    </main>
+
+
+    
+</body>
+</html>
