@@ -82,7 +82,7 @@ input {
     text-align: center;
     color: var(--colorVerde);
     text-shadow: 0 0 2px var(--colorVerde);
-    margin: 3rem;
+    margin: 2rem;
 }
 
 .generator {
