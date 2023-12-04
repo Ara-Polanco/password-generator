@@ -4,56 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 
+    
     <header class="header">
         <h1 class="header__heading">Password Generator</h1>
     </header>
-
-    <main class="generator container">
-        <form action="" class="generator__form">
+    <main class="generator">
+        <form action="#" class="generator__form">
 
             <div class="generator__password">
-                <input class="generator__password-value" type="text" id="generator__password-value" placeholder="P4$5W0RD!" readonly> 
+                <input class="generator__password-value" type="text" id="generator__password-value" placeholder="P4$5W0RD!" name="password" readonly> 
             </div>
 
             <div class="generator__length">
-                <label for="" class="generator__length-value">Length: 16</label>
+                <label for="generator__length-value" id="generator__length-value" class="generator__length-value">Length: 16</label>
 
                 <div class="generator__range">
-                    <p class="generator__range-value">4</p>
-                    <input type="range" class="generator__range-input" id="range" min="4" max="32" value="16" step="4">
-                    <p class="generator__range-value">32</p>
+                    <label for="generator__range-value" class="generator__range-value">4</label>
+                    <input type="range" class="generator__range-input" id="range" min="4" max="32" value="16" step="4" name="range">
+                    <label for="generator__range-value" class="generator__range-value">32</label>
                 </div>
             </div>
 
             <div class="generator__filters">
 
                 <div class="generator__upperCase generator__options">
-                    <label for="" class="generator__description">Include UpperCase</label>
-                    <input type="checkbox" class="generator__checkbox">
+                    <label for="upperCaseOption" class="generator__description">Include UpperCase</label>
+                    <input id="upperCaseOption" type="checkbox" name="options" class="generator__checkbox">
                 </div>
 
                 <div class="generator__lowerCase generator__options">
-                    <label for="" class="generator__description">Include LowerCase</label>
-                    <input type="checkbox" class="generator__checkbox">
+                    <label for="lowerCaseOption" class="generator__description">Include LowerCase</label>
+                    <input id="lowerCaseOption" type="checkbox"  name="options" class="generator__checkbox">
                 </div>
 
                 <div class="generator__numbers generator__options">
-                    <label for="" class="generator__description">Include Numbers</label>
-                    <input type="checkbox" class="generator__checkbox">
+                    <label for="numbersOption" class="generator__description">Include Numbers</label>
+                    <input id="numbersOption" type="checkbox"  name="options" class="generator__checkbox">
                 </div>
 
                 <div class="generator__symbols generator__options">
-                    <label for="" class="generator__description">Include Symbols</label>
-                    <input type="checkbox" class="generator__checkbox">
+                    <label for="symbolsOption" class="generator__description">Include Symbols</label>
+                    <input id="symbolsOption" type="checkbox"  name="options" class="generator__checkbox">
                 </div>
 
-                <button disabled>Generate Password</button>
-
             </div>
-
+            
+            <button class="generator__btn btn" id="generator__btn" disabled>Generate Password</button>
 
         </form>
 
