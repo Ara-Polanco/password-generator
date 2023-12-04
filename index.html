@@ -6,6 +6,7 @@
     <title>Password Generator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
@@ -23,35 +24,35 @@
             </div>
 
             <div class="generator__length">
-                <label for="range" id="generator__length-value" class="generator__length-value">Length: 16</label>
+                <p  id="generator__length-value" class="generator__length-value">Length: 16</p>
 
                 <div class="generator__range">
-                    <label  class="generator__range-value">4</label>
+                    <p  class="generator__range-value">4</p>
                     <input type="range" class="generator__range-input" id="range" min="4" max="32" value="16" step="4" name="range">
-                    <label class="generator__range-value">32</label>  <!-- for="generator__range-value" -->
+                    <p class="generator__range-value">32</p>  
                 </div>
             </div>
 
             <div class="generator__filters" >
 
                 <div class="generator__options">
-                    <label for="upperCaseOption" class="generator__description">Include UpperCase</label>
-                    <input id="upperCaseOption" type="checkbox" name="options" class="generator__checkbox">
+                    <label for="upperCase" class="generator__description">Include UpperCase</label>
+                    <input id="upperCase" type="checkbox" name="options" class="generator__checkbox">
                 </div>
 
                 <div class="generator__options">
-                    <label for="lowerCaseOption" class="generator__description">Include LowerCase</label>
-                    <input id="lowerCaseOption" type="checkbox"  name="options" class="generator__checkbox">
+                    <label for="lowerCase" class="generator__description">Include LowerCase</label>
+                    <input id="lowerCase" type="checkbox"  name="options" class="generator__checkbox">
                 </div>
 
                 <div class="generator__options">
-                    <label for="numbersOption" class="generator__description">Include Numbers</label>
-                    <input id="numbersOption" type="checkbox"  name="options" class="generator__checkbox">
+                    <label for="numbers" class="generator__description">Include Numbers</label>
+                    <input id="numbers" type="checkbox"  name="options" class="generator__checkbox">
                 </div>
 
                 <div class="generator__options">
-                    <label for="symbolsOption" class="generator__description">Include Symbols</label>
-                    <input id="symbolsOption" type="checkbox"  name="options" class="generator__checkbox">
+                    <label for="symbols" class="generator__description">Include Symbols</label>
+                    <input id="symbols" type="checkbox"  name="options" class="generator__checkbox">
                 </div>
 
             </div>
@@ -59,10 +60,7 @@
             <button class="generator__btn btn" id="generator__btn" disabled>Generate Password</button>
 
         </form>
-
-
     </main>
-
 
     <script src="/js/app.js"></script>
 </body>

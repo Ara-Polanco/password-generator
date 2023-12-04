@@ -1,10 +1,8 @@
 :root {
     --colorClaro: #F3F3F3;
-    --colorMedio: #AF2655;
     --colorMedio: #af2656d0;
     --colorOscuro: #860A35;
     --colorVerde: #a1b853;
-
     --fuentePrincipal: 'Montserrat', sans-serif;
 }
 
@@ -37,7 +35,10 @@ input {
     font-family: inherit;
     outline: none;
     border: none;
+}
 
+p {
+    margin: 0;
 }
 
 .generator__length-value,
@@ -51,10 +52,6 @@ input {
 }
 
 .btn {
-/*     color: var(--colorOscuro);
-    background-color: var(--colorClaro);
-    border: 2px solid var(--colorMedio); */
-
     color: var(--colorClaro);
     background-color: var(--colorOscuro);
     border: 2px solid var(--colorClaro);
@@ -62,22 +59,7 @@ input {
     font-weight: 600;
 
     padding: .5rem 2rem;
-    transition-duration: .5s;
-    transition-property: background-color color border transform;
     cursor: pointer;
-}
-
-/* .btn:hover */
- .btn:not(:disabled){
-    color: var(--colorOscuro);
-    background-color: var(--colorClaro);
-    border: 2px solid var(--colorMedio);
-    transform: scale(.95);
-
-   /*  color: var(--colorClaro);
-    background-color: var(--colorOscuro);
-    border: 2px solid var(--colorClaro); */
-
 }
 
 .header__heading {
@@ -123,10 +105,14 @@ input {
     margin-bottom: 2rem;
 }
 
+.generator__password-value {
+    color:  var(--colorClaro);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 .generator__password-value::placeholder {
-    color: var(--colorClaro);
-    font-size: 1.8rem;
-    letter-spacing: 4px;
+    color:  var(--colorClaro);
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -152,11 +138,16 @@ input {
 }
  
 @media (min-width: 768px) {  
-    .generator {
-        width: 75%;
-    }
-
     body {
         font-size: 1.8rem;
     }
+    
+    .generator {
+        width: 75%;
+        width: 80%;
+    }
+    .generator__password-value {
+        font-size: 1.8rem;
+    }
+
 }
