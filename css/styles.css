@@ -63,14 +63,16 @@ input {
 
     padding: .5rem 2rem;
     transition-duration: .5s;
-    transition-property: background-color color border;
+    transition-property: background-color color border transform;
     cursor: pointer;
 }
 
-.btn:hover {
+/* .btn:hover */
+ .btn:not(:disabled){
     color: var(--colorOscuro);
     background-color: var(--colorClaro);
     border: 2px solid var(--colorMedio);
+    transform: scale(.95);
 
    /*  color: var(--colorClaro);
     background-color: var(--colorOscuro);
@@ -144,6 +146,11 @@ input {
     justify-content: space-between;
 }
 
+.generator__btn:disabled {
+    background-color: rgba(128, 128, 128, 0.842);
+    cursor: not-allowed;
+}
+ 
 @media (min-width: 768px) {  
     .generator {
         width: 75%;
