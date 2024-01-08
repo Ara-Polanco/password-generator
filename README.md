@@ -14,7 +14,8 @@ Puedes probar el generador de contraseñas [aquí](https://password-generator-tw
 
 ## Ejemplo
 
-![password-example](https://github.com/Ara-Polanco/password-generator/assets/120612439/44000f09-0c32-44dc-a047-b6f1666ccab1)
+![password-example](https://github.com/Ara-Polanco/password-generator/assets/120612439/b864f5e3-9c97-4ecd-a649-ae12b554848d)
+)
 
 ## Uso
 
